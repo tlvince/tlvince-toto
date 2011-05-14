@@ -100,11 +100,3 @@ pre {
 blockquote {
   font-style: italic;
 }
-
-body > footer {
-  text-align: left;
-  margin-left: 10px;
-	font-style: italic;
-  font-size: 18px;
-  color: #888;
-}
