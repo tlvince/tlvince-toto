@@ -1,0 +1,26 @@
+GIT
+  remote: https://github.com/tlvince/toto.git
+  revision: 8e58fec1c15b310d651b26ecce25740bb7a87a02
+  specs:
+    toto (0.4.9)
+      builder
+      rack
+      rdiscount
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    builder (3.0.0)
+    maruku (0.6.0)
+      syntax (>= 1.0.0)
+    rack (1.2.2)
+    rdiscount (1.6.8)
+    syntax (1.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  builder
+  maruku
+  toto!
