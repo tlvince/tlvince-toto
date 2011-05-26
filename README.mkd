@@ -1,4 +1,12 @@
-dorothy
+tlvince
 =======
 
-A wonderful template for [toto](http://cloudhead.io/toto), the blogging engine.
+Tom Vincent's journals.
+
+Credits
+-------
+
+Based on [dorothy][], a wonderful template for [toto][], the blogging engine.
+
+  [toto]: http://cloudhead.io/toto
+  [dorothy]: https://github.com/cloudhead/dorothy
