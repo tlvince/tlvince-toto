@@ -1,3 +1,11 @@
+/**
+ * tlvince.com main styles
+ * Copyright 2011 Tom Vincent <http://www.tlvince.com/contact/>
+ *
+ * Based on Vladimir Carrer's awesome Better Web Readability Project:
+ * https://code.google.com/p/better-web-readability-project/
+ */
+
 body {
     margin: 1em auto;
     width: 35em;
@@ -8,7 +16,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: serif;
 }
-h1 { font-size: 2em; margin-bottom: 0.765em; }
+h1 { font-size: 2em; margin-bottom: 0.3em; }
 h2 { font-size: 1.6em;  margin-bottom: 0.855em; }
 h3 { font-size: 1.4em;  margin-bottom: 0.956em; }
 h4 { font-size: 1.3em;  margin-bottom: 1.161em; }
@@ -62,3 +70,6 @@ abbr, acronym {
     border-bottom: 1px dotted #666;
     cursor: help;
 }
+
+.date { font-size: 0.8em; }
+header { padding: 0 0 0.8125em 0; }
