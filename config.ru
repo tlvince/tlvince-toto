@@ -20,7 +20,7 @@ toto = Toto::Server.new do
   # set [:setting], [value]
   # 
   set :author,    "Tom Vincent"                               # blog author
-  set :title,     "Tom Vincent's Journals"                    # site title
+  set :title,     "tlvince"                                   # site title
   # set :root,      "index"                                   # page to load on /
   # set :date,      lambda {|now| now.strftime("%d/%m/%Y") }  # date format for articles
   # set :markdown,  :smart                                    # use markdown + smart-mode
