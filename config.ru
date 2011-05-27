@@ -22,8 +22,8 @@ toto = Toto::Server.new do
     set :author,    "Tom Vincent"   # blog author
     set :title,     "tlvince"       # site title
 
-    # Human-readble date format, e.g.: 8th of April 2011
-    set :date, lambda {|now| now.strftime("#{now.day.ordinal} of %B, %Y") }
+    # Human-readble date format, e.g.: 8th April 2011
+    set :date, lambda {|now| now.strftime("#{now.day.ordinal} %B %Y") }
 end
 
 run toto
