@@ -1,7 +1,13 @@
 tlvince
 =======
 
-Tom Vincent's journals.
+An experimental open source website.
+
+Usage
+-----
+
+Since heroku [does not support git submodules][gsub], I use [git-subtree][] to
+pull in my [journal entries][journal]. It's suboptimal, but it works.
 
 Credits
 -------
@@ -10,3 +16,6 @@ Based on [dorothy][], a wonderful template for [toto][], the blogging engine.
 
   [toto]: http://cloudhead.io/toto
   [dorothy]: https://github.com/cloudhead/dorothy
+  [gsub]: https://devcenter.heroku.com/articles/git-submodules
+  [git-subtree]: https://github.com/apenwarr/git-subtree
+  [journal]: https://github.com/tlvince/journal
