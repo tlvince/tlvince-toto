@@ -1,6 +1,5 @@
-GIT
-  remote: https://github.com/tlvince/toto.git
-  revision: 8e58fec1c15b310d651b26ecce25740bb7a87a02
+PATH
+  remote: ~/src/ruby/toto
   specs:
     toto (0.4.9)
       builder
