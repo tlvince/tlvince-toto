@@ -1,37 +1,29 @@
-require 'bundler' 
+# Rackup file for tlvince.com
+# Copyright 2011 Tom Vincent <http://www.tlvince.com/contact/>
+# vim: set ft=ruby :
+
+# Set up the dependencies
+require "bundler" 
 Bundler.setup
 
-require 'toto'
+require "toto"
 
 # Rack config
-use Rack::Static, :urls => ['/css', '/js', '/images', '/favicon.ico'], :root => 'public'
+use Rack::Static, :urls => ["/css", "/favicon.ico"], :root => "public"
 use Rack::CommonLogger
 
-if ENV['RACK_ENV'] == 'development'
-  use Rack::ShowExceptions
+# Show debug messages
+if ENV["RACK_ENV"] == "development"
+    use Rack::ShowExceptions
 end
 
-#
-# Create and configure a toto instance
-#
+# Create, configure and start a toto instance
 toto = Toto::Server.new do
-  #
-  # Add your settings here
-  # set [:setting], [value]
-  # 
-  set :author,    "Tom Vincent"                               # blog author
-  set :title,     "tlvince"                                   # site title
-  # set :root,      "index"                                   # page to load on /
-  # set :date,      lambda {|now| now.strftime("%d/%m/%Y") }  # date format for articles
-  # set :markdown,  :smart                                    # use markdown + smart-mode
-  # set :disqus,    false                                     # disqus id, or false
-  # set :summary,   :max => 150, :delim => /~/                # length of article summary and delimiter
-  set :ext,       "mkd"                                     # file extension for articles
-  # set :cache,      28800                                    # cache duration, in seconds
+    set :author,    "Tom Vincent"   # blog author
+    set :title,     "tlvince"       # site title
 
-  set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
+    # Human-readble date format, e.g.: April 8th 2011
+    set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
 end
 
 run toto
-
-
