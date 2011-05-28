@@ -1,0 +1,14 @@
+A hackers approach to PIM
+
+* Everything in plain-text files
+* `git` handles timestamping and other meta-data
+* Easy to track changes
+* History is persistent
+
+Use cases
+---------
+
+### Idea management
+
+* Plain text list of one-liners
+* A folder for expanding on

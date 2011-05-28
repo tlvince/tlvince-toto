@@ -1,0 +1,13 @@
+Phone contact backup
+====================
+
+Created: 2010-01-23 18:42  
+Updated: 2010-01-23 18:42
+
+Summary:  
+Describes how I backed up my phone contacts under Linux.
+
+### Samsung to Gammu
+
+    export CNT=1; while [ $CNT -le 65 ]; do gammu --savefile VCARD21 
+    sam1/output-$CNT.vcs samsung.backup SM $CNT; let CNT=CNT+1; done

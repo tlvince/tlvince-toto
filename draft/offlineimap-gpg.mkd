@@ -1,0 +1,18 @@
+Optionally uninstall any keyring packages
+
+seahorse
+gnome-keyring
+gksu
+python-gnomekeyring
+libgnome-keyring
+
+Nows a chance to delete any remaining `~/.gnome*` directories (if you don't have
+any remaining gnome apps).
+
+There are plenty of [GUI frontends][gpggui] if you need one.
+
+## Goobook
+
+
+
+  [gpggui]: http://www.gnupg.org/related_software/frontends.en.html#gui

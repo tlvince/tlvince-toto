@@ -1,0 +1,46 @@
+Text editing
+	Uses
+		: A lot of my day is spent typing text files
+		Source
+		Email
+		Documentation
+	Tools
+		: Use an editor your happy with or switch to Vim
+	Analysis
+		: Work out when and why you need to make improvements.
+		Repetitive tasks
+		While working
+			Stops flow
+		How
+			Detect inefficiencies
+				: What do you repeat or spend time on
+			Find a quicker way
+				Read the docs
+				Ask people
+					: See how other people do it.
+				Watch
+			Make it a habit
+				: Make sure you actually use. Do a little bit every day.
+	7 Habits
+		1. Move around quickly
+			Highlight
+				
+			Folding
+			: Allows you to collapse long documents up, giving an overview of
+			: the document as a whole. Useful for functions in a source file.
+		2. Don't type twice
+			: Use CTRL-N to auto-complete reused words
+		3. Fix it when it's wrong
+			Spell check
+			: Works well, giving suggestions.
+			Abbreviations
+			: Auto corrections. Can also highlight the text.
+			: Notice words you misspell frequently and add them to a list.
+		4. A file seldom comes alone
+			: Files are often interlinked.
+		5. Lets work together
+		6. Text is structured
+			: _ is a good unobtrusive mapping prefix
+		7. Sharpen the saw
+			: Work your plan.
+			: You now how it works, now do it.

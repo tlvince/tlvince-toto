@@ -1,0 +1,89 @@
+Version numbers
+===============
+
+Created: 2010-02-07 14:45  
+Updated: 2010-02-07 14:45
+
+Summary:  
+How to update a version number variable in a multi-project SVN repository with
+`sed`.
+
+Background
+----------
+
+I keep all my coding projects under a version control; the majority using SVN.
+Although it is recommended to create a new repository for each project, I went
+for the simplicity a single repository. Most of the projects are fairly small
+and backups are easy.
+
+Version numbers
+---------------
+
+I like to set a variable in each source file containing a version number. This
+is in the format "[major].[minor].[revision]", e.g.:
+
+    VERSION="0.1.7"
+
+Wouldn't it be nice if that number could be updated automatically on each SVN
+commit?
+
+The major drawback of using a mult-project repository is intermingled commits.
+Revision numbers are used globally throughout the repository, so loose their
+meaning for a single project.
+
+Updating version number with SVN revisions
+------------------------------------------
+
+It is however, still possible to do it, albeit slightly convoluted.
+
+### Step 1: get the revision count
+
+To get the revision, you would normally do:
+
+    `svnversion [file]`
+
+... however, as shown above, this number is not correct in a multi-project
+repository.
+
+There is another method however. Here, we count the number of SVN commit
+messages:
+
+    svn log [file] | grep ^r[0-9] | wc -l
+
+The `grep ^r[0-9]` filters out the commit messages, then we count using `wc -l`.
+
+
+### Step 2: update the variable
+
+Automatically updating the variable is rather tricky.
+
+$ sed s/VERSION=/ARSE/ todo.sh
+$ sed s/VERSION=/ARSE=/ todo.sh | grep ARSE
+ARSE="0.1.7"
+$ svn info | grep '^URL:' | egrep -o '[^URL: ]+$'
+//localhost/todo/trunk
+$ svn info | grep '^URL:' | sed s/URL:\ //
+svn://localhost/todo/trunk
+$ sed s/VERSION=*.*/ARSE=/ todo.sh | grep ARSE
+$ sed s/\^VERSION=/VERSION=1/ todo.sh | grep VERSION=
+VERSION=1"0.1.7"
+$ svn info svn://localhost/todo/trunk/todo.sh | grep Date: | sed 's/.Date:\ //g'
+Last Changed2010-02-06 23:04:58 +0000 (Sat, 06 Feb 2010)
+$ svn info svn://localhost/todo/trunk/todo.sh | grep Date: | sed -e 's/^.*Date:\ //g' -e 's/\ +.*//g'
+2010-02-06 23:04:58
+$ grep "^VERSION=\"" todo.sh | sed -e 's/\d(?!.*?\d)//g'
+VERSION="0.1.7"
+$ grep "^VERSION=\"" todo.sh | sed -e 's/[0-9](?!\.*?[0-9])/9/g'
+VERSION="0.1.7"
+$ grep "^VERSION=\"" todo.sh | sed -e 's/[0-9]([^0-9]*)$/80\1/'
+sed: -e expression #1, char 23: invalid reference \1 on `s' command's RHS
+$ sed -E 's/\.[[:digit:]]+"/.9000"/g' tm
+$ sed -E '/^VERSION=/{s/\.[[:digit:]]+"/.9000"/g}' tm
+
+#regex seanstickle
+
+References
+----------
+[1]: http://www.keenertech.com/articles/2009/06/25/using_svn_revision_in_app
+[2]: http://ayaz.wordpress.com/2006/10/24/re-sed-tee-“search-replace-and-commit-back”/
+[3]: http://hacktux.com/bash/function

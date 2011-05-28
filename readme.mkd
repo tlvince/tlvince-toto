@@ -1,1 +1,3 @@
-Journal entries for tlvince.com 
+Journal entries for tlvince.com
+
+This branch contains drafts not ready for public consumption.

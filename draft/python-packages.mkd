@@ -1,0 +1,29 @@
+Python Packages
+===============
+
+Project Structure
+-----------------
+
+Assuming your project is named "encom":
+
+encom/
+    bin/
+        encom
+    encom/
+        __init__.py
+        utils.py
+    test/
+        test-utils.py
+    readme.txt
+    setup.py
+
+Intra-package References
+------------------------
+
+Splitting your monalithic script into seperate modules is a good idea.
+
+As the [style guide][2] says, absolute imports are much more readable and I can
+see no reason why you'd ever use relative imports.
+
+  [1]: http://docs.python.org/py3k/tutorial/modules.html#intra-package-references
+  [2]: http://www.python.org/dev/peps/pep-0008/

@@ -1,0 +1,65 @@
+Photo organisation
+==================
+
+Created: 2010-10-06 15:12  
+
+Summary: Linux photo organisation applications.
+
+Picasa
+------
+
+### Good
+
+* UX/UI
+* Non-destructive
+* Easy editing
+* Simple ini file used track changes
+* Realtime editing controls
+
+### Bad
+
+* gPhoto import never works
+* Limited RAW support
+
+digiKam
+-------
+
+Control panel:
+
+    $ pkgfile systemsettings
+    extra/kdebase-workspace
+
+### Good
+
+* Native
+* RAW support
+* gPhoto support
+* Extensive tagging
+* Ability to save and recall editing values
+
+#### Themes
+
+* Light: Digikasa
+* Dark: DLR
+
+### Bad
+
+* Heavyweight (KDE dependencies)
+* Destructive editing
+
+Make digiKam feel more like Picasa
+----------------------------------
+
+* Album thumbnail size: 124
+* Group images by album
+* Show album subalbums
+
+### Settings
+
+#### Album View
+
+* Untick file creation and modification date
+
+## Things you cant do
+
+* Sort album by reverse date

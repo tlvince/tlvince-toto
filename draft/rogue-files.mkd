@@ -1,0 +1,38 @@
+Rogue files
+===========
+
+Created: 2010-07-05 23:20  
+
+Summary:  
+Unwanted files keep being recreated in your $HOME? Read on...
+
+The problem
+-----------
+
+* XDG basedir spec
+* Who uses it?
+
+The Culprits
+------------
+
+* dmenu
+* Firefox
+
+The fixes
+---------
+
+* dmenu
+
+### inotify
+
+[inotify] is a component of the kernel that monitors the filesystem for certain
+events and reports such events to applications. An event could be whether a file
+has been modified or a new directory created. This provides an elegent solution
+in situations when [polling] might overwise be used.
+
+Here we're going to make use of inotify to delete some of those rogue files and
+directories. `inotify-tools` provides a interface to `inotify` in the form of
+library applications that we can use in scripts.
+
+  [inotify]: http://en.wikipedia.org/wiki/Inotify
+  [polling]: http://en.wikipedia.org/wiki/Polling_(computer_science)

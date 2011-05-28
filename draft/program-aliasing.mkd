@@ -1,0 +1,24 @@
+Program aliasing in Windows
+===========================
+
+Create a batch file with your overrides/arguments
+
+For cmd use:
+
+Add the path containing the bat to the end of %PATH%
+
+For explorer use:
+
+Create a shortcut to the bat with the "minimised" flag
+
+For explorer shell use:
+
+Copy/paste the batch contents into the program field
+
+Or if you don't care
+--------------------
+
+1. Call the bat directly (it'll work in all instances)
+2. Convert the bat to exe
+3. Wrap with `cmdow`
+4. Wrap with `invis.vbs`
