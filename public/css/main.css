@@ -23,7 +23,7 @@ h3 { font-size: 1.4em;  margin-bottom: 0.956em; }
 h4 { font-size: 1.3em;  margin-bottom: 1.161em; }
 h5, h6 { font-size: 1.2em;  margin-bottom: 1.238em; }
 
-p {
+p, ol, ul {
     padding: 0 0 0.8125em 0;
     line-height: 1.625em;
 }
@@ -72,3 +72,5 @@ abbr, acronym {
 
 .meta { font-size: 0.8em; }
 header { padding: 0 0 0.8125em 0; }
+ol li { list-style: decimal; }
+ul li { list-style: disc; }
