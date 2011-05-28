@@ -6,19 +6,19 @@ with one that I'm happy with, here's what happened.
 
 1.  Bought a cheap Xbox, with 1 "S" controller, AV/Power & 1 game - San
     Andreas
+
 2.  Before even starting to play the game, I dived straight into
     installing XBMC - it was only this that persuaded me to buy one in
     the first place!
-3.  Naturally, I fall under this description: [“first people didn’t want
-    to buy games.. now they don’t want to buy
-    modchips.."](http://forums.xbox-scene.com/index.php?showtopic=231250 "Which Mod Chip is better")
+
+3.  Naturally, I fall under this description: [first people didn't want to buy
+    games.. now they don’t want to buy modchips..][1]
     so a Softmod was the way to go! A softmod involves swapping the
     hard-drive out of the Xbox once it's in an "unlocked" state, to
     install Linux/Exploits onto the drive. So you don't have to do it
     again, almost all the homebrew applications allow you to FTP the
-    drive. This was the guide I followed:
-    [ndure](http://forums.xbox-scene.com/index.php?showtopic=496263 "Ndure Guide"),
-    totally n00b proof.
+    drive. This was the guide I followed: [ndure][2]. Totally n00b proof.
+
 4.  So from there, it's easy to pick and choose what homebrew you want
     on the Xbox. XBMC was by far the most developed and just awesome
     software to use (I must get round to donating...)
@@ -85,3 +85,5 @@ Essential links for anyone who would like to attempt this:
 
 Now onto the next project!
 
+  [1]: http://forums.xbox-scene.com/index.php?showtopic=231250
+  [2]: http://forums.xbox-scene.com/index.php?showtopic=496263 "Ndure Guide"
