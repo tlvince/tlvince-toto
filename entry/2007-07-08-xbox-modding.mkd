@@ -85,5 +85,5 @@ Essential links for anyone who would like to attempt this:
 
 Now onto the next project!
 
-  [1]: http://forums.xbox-scene.com/index.php?showtopic=231250
+  [1]: http://forums.xbox-scene.com/index.php?showtopic=231250 "Which Mod Chip"
   [2]: http://forums.xbox-scene.com/index.php?showtopic=496263 "Ndure Guide"
