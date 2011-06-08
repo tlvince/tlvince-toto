@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tlvince/toto.git
-  revision: d3f293f9814108b77e5be23b7d41793205c58c38
+  revision: e2c021e0ed8d6db9c11ebec34f2595a177f0ee7f
   specs:
     toto (0.4.9)
       builder
