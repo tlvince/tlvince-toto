@@ -1,0 +1,52 @@
+[caption align="alignleft" width="140" caption=" "]<img
+src="http://www.gravatar.com/avatar/4103b4e9e71e7d5f14b740c9d36c231f?s=140&d=mm&r=PG"
+alt="Tom Vincent's gravatar" title="My mug shot" width="140" height="140"
+/></a>[/caption]
+
+**Hi!**  
+I'm *Tom Vincent*, a Computer Science student from the University of Kent, UK.
+
+I have a passion for *web development*, *UX*/*UI* design and *AI*, always
+striving for the most simple and elegant solution to the job.[^1]
+
+I have a extensive background in *music* and love combining it with the
+flexibility of *computing* to form an awesome blend of *music technology*. I'll
+also give you a game of *badminton* any day of the week :).
+
+You'll find me writing here predominantly about my adventures in [Hong Kong][hk]
+and the ever-inspiring [Open Source community][linux]. You'll also find samples
+of my [web][] and [photography][photos] work.
+
+**Thanks** for stopping by! If you are interested in my C.V. or references,
+please [contact me][contact].
+
+### Where else to find me
+
+* [Twitter][]
+* [GitHub][]
+* [Stack Exchange][]
+* [LinkedIn][]
+
+[^1]: > Making the simple complicated is commonplace. Making the complicated
+simple -- awesomely simple -- that's creativity.
+>
+> -- <cite>[Charles Mingus][]</cite>
+
+  [contact]: /contact/ "My contact page"
+  [hk]: /category/life/ "Hong Kong posts"
+  [Linux]: /category/linux/ "Linux articles"
+  [Charles Mingus]: http://en.wikipedia.org/wiki/Charles_Mingus "Wikipedia entry
+on Charles Mingus"
+  [web]: /gallery/web-portfolio/ "My web portfolio"
+  [photos]: /category/gallery/ "My collection of photo galleries"
+
+  *[UX]: User Experience
+  *[UI]: User Interface
+  *[AI]: Artificial Intelligence
+
+  [LinkedIn]: http://uk.linkedin.com/in/tlvince "tlvince's profile on LinkedIn"
+  [Twitter]: http://twitter.com/tlvince "tlvince's profile on Twitter"
+  [GitHub]: http://github.com/tlvince "tlvince's profile on GitHub"
+  [Stack Exchange]:
+http://stackexchange.com/users/39813f7e-c72a-4c84-9aa2-2735136ef689?tab=accounts
+"tlvince's profiles on Stack Exchange"
