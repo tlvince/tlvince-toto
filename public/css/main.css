@@ -72,8 +72,11 @@ abbr, acronym {
 
 .meta { font-size: 0.8em; }
 #header, .title { padding: 0 0 0.8125em; }
+
 ol li { list-style: decimal; }
 ul li { list-style: disc; }
+blockquote, ol, ul { margin-left: 2.5em; }
+
 sup {vertical-align: super; }
 sub { vertical-align: sub; }
 hr { margin: 0.4062em 0 0.8125em; }
