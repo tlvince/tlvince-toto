@@ -50,7 +50,7 @@ a:hover { text-decoration: underline; }
 
 sup { font-size: 0.8em; }
 em { font-style: italic; }
-strong { font-style: bold; }
+strong { font-weight: bold; }
 
 blockquote { 
     padding: 1.625em 1em;
@@ -79,7 +79,12 @@ blockquote, ol, ul { margin-left: 2.5em; }
 
 sup {vertical-align: super; }
 sub { vertical-align: sub; }
-hr { margin: 0.4062em 0 0.8125em; }
+
+hr {
+    border: none;
+    border-top: thin solid #eee8d5;
+    margin: 0.8125em 0;
+}
 
 #header { margin: 0.4062em 0 1.625em; }
 #footer { margin: 1.625em 0; }
@@ -88,3 +93,6 @@ hr { margin: 0.4062em 0 0.8125em; }
 
 #breadcrumb a, .title a { color: #657B83; }
 #breadcrumb a:hover, .title h1 a:hover { color:  #B58900; }
+
+#mugshot { float: right; }
+img { margin: 0.8125em; }
