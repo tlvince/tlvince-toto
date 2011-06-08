@@ -19,12 +19,13 @@
         <a href="/">tlvince</a>
       </span>
       <span id="nav">
-        <a href="/about/">About</a>
-        <a href="/archives/">Archives</a>
+        <a href="/about/">About</a> &#183; 
+        <a href="/archives/">Archives</a> &#183; 
+        <a href="/index.xml">Feed</a>
     </section>
     <%= yield %> 
     <section id="footer">
-      Copyright 2007-<%= Time.now.year %> <a href="/about/">Tom Vincent</a>.
+      <span class="meta">Copyright 2007-<%= Time.now.year %> <a href="/about/">Tom Vincent</a>.</span>
     </section>
   </body>
 </html>
