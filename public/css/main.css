@@ -7,7 +7,7 @@
  */
 
 body {
-    margin: 1em auto;
+    margin: 0 auto;
     width: 35em;
     background: #FDF6E3;
     color: #657B83;
@@ -17,7 +17,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: serif;
 }
-h1 { font-size: 2em; margin-bottom: 0.1em; }
+h1 { font-size: 2em; margin-bottom: 0.2301em; }
 h2 { font-size: 1.6em;  margin-bottom: 0.855em; }
 h3 { font-size: 1.4em;  margin-bottom: 0.956em; }
 h4 { font-size: 1.3em;  margin-bottom: 1.161em; }
@@ -71,9 +71,17 @@ abbr, acronym {
 }
 
 .meta { font-size: 0.8em; }
-header { padding: 0 0 0.8125em 0; }
+#header, .title { padding: 0 0 0.8125em; }
 ol li { list-style: decimal; }
 ul li { list-style: disc; }
 sup {vertical-align: super; }
 sub { vertical-align: sub; }
-hr { margin: 0.4062em 0; }
+hr { margin: 0.8125em 0; }
+
+#header { margin: 0.4062em 0 1.625em; }
+#footer { margin: 1.625em 0; }
+#breadcrumb { float: left; }
+#nav { float: right; }
+
+#breadcrumb a, .title a { color: #657B83; }
+#breadcrumb a:hover, .title h1 a:hover { color:  #B58900; }
