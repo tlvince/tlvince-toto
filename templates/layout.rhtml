@@ -14,8 +14,17 @@
     </title>
   </head>
   <body>
-    <section>
-      <%= yield %> 
+    <section id="header">
+      <span id="breadcrumb">
+        <a href="/">tlvince</a>
+      </span>
+      <span id="nav">
+        <a href="/about/">About</a>
+        <a href="/archives/">Archives</a>
+    </section>
+    <%= yield %> 
+    <section id="footer">
+      Copyright 2007-<%= Time.now.year %> <a href="/about/">Tom Vincent</a>.
     </section>
   </body>
 </html>
