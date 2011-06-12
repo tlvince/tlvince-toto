@@ -134,6 +134,7 @@ header {
     padding: 0 0 0.8125em; 
     margin: 0.4062em 0 1.625em;
 }
+article > header { margin-bottom: 0; }
 footer { margin: 1.625em 0; }
 
 #breadcrumb { float: left; }
