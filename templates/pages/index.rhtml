@@ -3,7 +3,7 @@
     <article>
       <header>
         <h1><a href="<%= article.path %>"><%= article.title %></a></h1>
-        <time datetime="<%= self[:date] %>" pubdate><%= article.date %></time>
+        <time datetime="<%= article[:date].iso8601 %>" pubdate><%= article.date %></time>
       </header>
       <section class="content">
         <%= article.summary %>
