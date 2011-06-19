@@ -5,8 +5,8 @@ date: 25/07/2007
 
 Dos paths use old 8.3 file names, so if any path contains a space, you
 will have to find out the 8.3 version or enclose the whole path in
-double quotes. 8.3 file names and paths can be found by using dir /x in
-command prompt, e.g.
+double quotes. 8.3 file names and paths can be found by using `dir /x` in
+command prompt, e.g.:
 
     cmd.exe
     cd \
@@ -22,7 +22,7 @@ command prompt, e.g.
     1 Dir(s) 12,983,218,176 bytes free
 
 `DOWNLO~1` is the 8.3 path name of the folder Downloads. Full paths that
-include spaces need to be enclosed by double quotes (""), e.g.
+include spaces need to be enclosed by double quotes (`""`), e.g.
 
     cmd.exe
     cd "Downloads\My Received Files"
@@ -43,15 +43,15 @@ subdirectory, you would type:
 
 Because Windows was the active directory, no other commands are needed.
 But if you knew you wanted to move to a subdirectory of a directory
-immediately you use a back slash (\\). So the command would be: cd
-Parent Directory\\Subdirectory e.g.
+immediately you use a back slash (`\`). So the command would be: cd
+Parent Directory\Subdirectory e.g.
 
     cd Windows\System
     C:\Windows\System>
 
-This is called moving into a “deep” directory. If however, you were
+This is called moving into a "deep" directory. If however, you were
 already in a deep directory and wanted to move directly to a folder that
-is nearer to the root, you can include an initial back slash (\\). This
+is nearer to the root, you can include an initial back slash (`\`). This
 tells the CD command to move to the root of the drive first.
 
     C:\Downloads\My Received Files>
@@ -60,12 +60,12 @@ tells the CD command to move to the root of the drive first.
 
 ### Relative Paths & Parent Folders
 
-So far, we’ve looked at moving forward in the folder (directory) tree.
-You can also move backwards, or “Up”, in exactly the same way as “Up One
-Level” we’re familiar with in the Windows GUI environment. Typing two
-dots (..) move’s up one level. This is used in the same way as Relative
-URLs in HTML. Typing one dot (.) refers to the current directory You can
-return to the root of the drive by typing a back slash (\\) Relative
+So far, we've looked at moving forward in the folder (directory) tree.
+You can also move backwards, or "Up", in exactly the same way as "Up One
+Level" we're familiar with in the Windows GUI environment. Typing two
+dots (`..`) move's up one level. This is used in the same way as Relative
+URLs in HTML. Typing one dot (`.`) refers to the current directory You can
+return to the root of the drive by typing a back slash (`\`) Relative
 paths can be used with the CD command as before and can be strung
 together like usual, e.g.
 
@@ -79,7 +79,7 @@ folders, but are good to implement in folders that can have changing
 paths. For example, if a person installs a game, they can install the
 game to a different directory than default. If a configuration file is
 nested within the games folders and the games folder tree remains
-intact, relative paths can be used in the config’s to point, for
+intact, relative paths can be used in the config's to point, for
 example, to an exe that is in the games root folder, i.e.
 
     D:\Quake 3\Servers\2vs2.bat
@@ -89,44 +89,44 @@ example, to an exe that is in the games root folder, i.e.
 ### Running A Batch File That Closes The CMD Window
 
 Normally, whenever you run a batch file, if a program is called to
-launch in the batch, the command prompt will stay running and doesn’t
+launch in the batch, the command prompt will stay running and doesn't
 close until the program has closed. Adding an EXIT command to the end of
-the batch file is suppose to end it, but “it is important to realize
+the batch file is suppose to end it, but "it is important to realize
 that if a batch file or program is still running a program, the MS-DOS
 windows will not close until it has completed. Therefore a MS-DOS window
 may remain open either because the program stopped responding or because
-it’s still performing tasks.” One way of closing the command window
+it's still performing tasks." One way of closing the command window
 before the program has closed is to call the program with the START
 command, e.g.
 
     @ ECHO OFF
     D:
-    cd “D:\Games\Quake 3″
+    cd "D:\Games\Quake 3
     START Quake3.exe
 
-If the exe file contains a space, it’s corresponding 8.1 filename will
+If the exe file contains a space, it's corresponding 8.1 filename will
 have to be used, e.g.
 
     @ ECHO OFF
     D:
-    cd “D:\Games\Quake 3″
+    cd "D:\Games\Quake 3"
     START Quake3~1.exe
 
-Or it is possible to “trick” the START command by typing empty double
-quotes before the exe and then enclosing the exe in it’s own double
-quotes;
+Or it is possible to "trick" the START command by typing empty double
+quotes before the exe and then enclosing the exe in it's own double
+quotes:
 
     @ ECHO OFF
     D:
-    cd “D:\Games\Quake 3″
-    START “” “Quake 3.exe”
+    cd "D:\Games\Quake 3"
+    START "" "Quake 3.exe"
 
 (Usually, the empty double quotes would be used to give the command
-prompt’s window a title)
+prompt's window a title)
 
 ### Copying The Contents Of CMD To Clipboard
 
-In Windows XP, right click the command prompt window and press “Mark”.
+In Windows XP, right click the command prompt window and press "Mark".
 Now click and highlight the text you want copied and press enter.
 
 ### Some useful Commands
@@ -137,3 +137,4 @@ Now click and highlight the text you want copied and press enter.
 * `Net Stop` -- Stops a service
 * `rmdir /s` -- Deletes a folder
 * `shutdown -s -f -t 10` -- Shutdown PC
+

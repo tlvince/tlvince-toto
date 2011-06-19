@@ -1,10 +1,10 @@
 title: Converting Eqium Presets To UNIQUEL-IZER
 date: 27/02/2008
 
-Since [Elemental Audio](http://www.elementalaudio.com/) have changed hands to
-[Roger Nichols Digital, Inc](http://www.rogernicholsdigital.com/), all their
-original plugins, such as Eqium and Firium have changed name and been given
-slight updates (mainly just the inclusion of a few extra presets).
+Since [Elemental Audio][1] have changed hands to [Roger Nichols Digital, Inc][2],
+all their original plugins, such as Eqium and Firium have changed name and been
+given slight updates (mainly just the inclusion of a few extra
+presets).
 
 Eqium is now known as UNIQUEL-IZER and Firium known as FREQUAL-IZER.
 
@@ -18,7 +18,10 @@ issue.
 
 Here's an example:
 
-    <!--©2002 Elemental Audio Systems, www.elementalaudio.com-->
+    <!--2002 Elemental Audio Systems, www.elementalaudio.com-->
     <uniquelizer_filter_settings version="Roger Nichols Digital UNIQUEL-IZER Settings v1.0">
     [INSERT .eqm source here]
     </uniquelizer_filter_settings>
+
+  [1]: http://www.elementalaudio.com/
+  [2]: http://www.rogernicholsdigital.com/
