@@ -106,6 +106,14 @@ a:hover { text-decoration: underline; }
 #breadcrumb a, h1 a { color: #657B83; }
 #breadcrumb a:hover, h1 a:hover { color:  #B58900; }
 
+/* Code {{{2 */
+pre, code, kbd, samp {
+  background-color: #EEE8D5;
+  border: 1px solid #CCC;
+  color: #586E75;
+  margin-bottom: 0.8125em;
+}
+
 /* XXX: needs organising {{{2 */
 
 p, ol, ul {
@@ -125,7 +133,7 @@ blockquote:before {
 }
 
 blockquote > p { margin-top: -0.625em; }
-.meta, footer, time { font-size: 0.8em; }
+.meta, footer, time, pre, code, kbd, samp { font-size: 0.8em; }
 
 hr {
     border-top: thin solid #eee8d5;
