@@ -1,9 +1,17 @@
+/**
+ * CodeRay GitHub Theme.
+ *
+ * Based on work by Daniel Pietzsch:
+ * https://github.com/pie4dan/CodeRay-GitHub-Theme
+ */
+
 .CodeRay {
-  background-color: #FFF;
+  background-color: #EEE8D5;
   border: 1px solid #CCC;
-  font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
-  color: #000;
+  font-family: monospace;
+  color: #586E75;
   padding: 1em 0px 1em 1em;
+  margin-bottom: 0.8125em;
 }
 .CodeRay pre {
   margin: 0px;
