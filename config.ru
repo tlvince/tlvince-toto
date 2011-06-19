@@ -9,7 +9,10 @@ Bundler.setup
 require "toto"
 
 # Rack config
-use Rack::Static, :urls => ["/css", "/favicon.ico"], :root => "public"
+use Rack::Static, 
+    :urls => ["/css", "/favicon.ico", "/apple-touch-icon.png", 
+        "/crossdomain.xml", "/humans.txt", "/robots.txt"],
+    :root => "public"
 use Rack::CommonLogger
 
 # Show debug messages

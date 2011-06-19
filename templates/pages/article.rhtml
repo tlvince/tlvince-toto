@@ -1,8 +1,8 @@
-<article class="entry">
-  <section class="title">
+<article>
+  <header>
     <h1><%= title %></h1>
-    <span class="meta"><%= date %></span>
-  </section>
+    <time datetime="<%= self[:date] %>" pubdate><%= date %></time>
+  </header>
 
   <section class="content">
     <%= body %>

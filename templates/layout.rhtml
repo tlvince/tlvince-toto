@@ -1,10 +1,9 @@
 <!doctype html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
     <title>
         <% if @path == "index" %>
             <%= title %>
@@ -12,21 +11,43 @@
             <%= title %> - <%= @config[:title] %>
         <% end %>
     </title>
-  </head>
-  <body>
-    <section id="header">
-      <span id="breadcrumb">
-        <a href="/">tlvince</a>
-      </span>
-      <span id="nav">
-        <a href="/about/">About</a> &#183; 
-        <a href="/archives/">Archives</a> &#183; 
-        <a href="/index.xml">Feed</a>
-    </section>
-    <%= yield %> 
-    <section id="footer">
-      <span class="meta">Copyright 2007-<%= Time.now.year %> <a href="/about/">Tom Vincent</a>.</span>
-    </section>
-  </body>
-</html>
+    <meta name="description" content="">
+    <meta name="author" content="<%= @config[:author] %>">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" media="handheld" href="/css/handheld.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
 
+<body>
+    <header>
+        <span id="breadcrumb">
+            <a href="/"><%= @config[:title] %></a>
+        </span>
+        <nav>
+            <ul>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/archives/">Archives</a></li>
+                <li><a href="/index.xml">Feed</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <%= yield %>
+
+    <footer>
+        <p>Copyright 2007-<%= Time.now.year %> <a href="/about/"><%= @config[:author] %></a>.</p>
+    </footer>
+
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+</body>
+</html>
