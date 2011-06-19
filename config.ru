@@ -7,6 +7,13 @@ require "bundler"
 Bundler.setup
 
 require "toto"
+require "rack/codehighlighter"
+require "coderay"
+require "coderay_bash"
+
+# Coderay config
+use Rack::Codehighlighter, :coderay, :markdown => true, :element => "pre>code",
+    :pattern => /\A:::(\w+)\s*(\n|&#x000A;)/i, :logging => true
 
 # Rack config
 use Rack::Static, 
