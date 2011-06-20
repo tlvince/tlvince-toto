@@ -156,7 +156,16 @@ nav li {
     padding-left: 0.8125em;
 }
 
-#mugshot { float: right; }
+#mugshot { 
+    float: right;
+    border: 1px solid #EEE8D5;
+    background-color: white;
+    margin: 0.8125em 0.8125em 0;
+    line-height: 0;
+}
+
+#mugshot img { margin: 0.5em; }
+
 img { margin: 0.8125em; }
 
 /*  HTML5 ✰ Boilerplate - Non semantic {{{1 */
