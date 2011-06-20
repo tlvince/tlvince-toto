@@ -7,8 +7,10 @@
     <title>
         <% if @path == "index" %>
             <%= title %>
-        <% else %>
+        <% elsif @path.split('/').compact.length == 4 %>
             <%= title %> - <%= @config[:title] %>
+        <% else %>
+            <%= @path.capitalize %> - <%= @config[:title] %>
         <% end %>
     </title>
     <meta name="description" content="">
