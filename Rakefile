@@ -1,42 +1,44 @@
-require 'toto'
+# Rakefile for tlvince.com
+# Copyright 2011 Tom Vincent <http://www.tlvince.com/contact/>
+# vim: set fdm=marker :
 
-@config = Toto::Config::Defaults
+task :default => :build
 
-task :default => :new
+desc "Minify assets and build pages" # {{{1
+task :build do
+    toto "Building pages"
 
-desc "Create a new article."
-task :new do
-  title = ask('Title: ')
-  slug = title.empty?? nil : title.strip.slugize
-
-  article = {'title' => title, 'date' => Time.now.strftime("%d/%m/%Y")}.to_yaml
-  article << "\n"
-  article << "Once upon a time...\n\n"
-
-  path = "#{Toto::Paths[:articles]}/#{Time.now.strftime("%Y-%m-%d")}#{'-' + slug if slug}.#{@config[:ext]}"
-
-  unless File.exist? path
-    File.open(path, "w") do |file|
-      file.write article
+    if not has_program?("pandoc")
+        abort("error: requires 'pandoc' to be installed")
     end
-    toto "an article was created for you at #{path}."
-  else
-    toto "I can't create the article, #{path} already exists."
-  end
+
+    root = "templates/pages"
+    Dir.foreach(root + "/src") do |page|
+        next if page == "." or page == ".."
+        html = "#{File.basename(page, ".mkd")}.rhtml" 
+        `pandoc --to="html" --smart --output="#{root}/#{html}" \
+            "#{root}/src/#{page}"`
+    end
 end
 
-desc "Publish my blog."
-task :publish do
-  toto "publishing your article(s)..."
-  `git push heroku master`
+desc "Deploy to GitHub and Heroku" # {{{1
+task :deploy do
+    toto "Deploying to GitHub"
+    `git push origin master`
+    toto "Deploying to Heroku"
+    `git push heroku master`
 end
+
+# Helper functions {{{1
 
 def toto msg
-  puts "\n  toto ~ #{msg}\n\n"
+    puts "toto: #{msg}\n"
 end
 
-def ask message
-  print message
-  STDIN.gets.chomp
+# Author: Arto Bendiken
+# http://stackoverflow.com/questions/2108727/
+def has_program?(program)
+    ENV['PATH'].split(File::PATH_SEPARATOR).any? do |directory|
+        File.executable?(File.join(directory, program.to_s))
+    end
 end
-
