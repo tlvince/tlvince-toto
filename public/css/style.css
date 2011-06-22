@@ -96,7 +96,7 @@ h4 { font-size: 1.3em;  margin-bottom: 1.161em; }
 h5, h6 { font-size: 1.2em;  margin-bottom: 1.238em; }
 
 /* Links {{{2 */
-a, a:active, a:visited { 
+a, a:active { 
     color: #B58900; 
     text-decoration: none;
 }
