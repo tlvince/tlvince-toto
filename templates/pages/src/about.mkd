@@ -12,9 +12,9 @@ I have a extensive background in *music* and love combining it with the
 flexibility of *computing* to form an awesome blend of *music technology*. I'll
 also give you a game of *badminton* any day of the week :).
 
-You'll find me writing here predominantly about my adventures in [Hong Kong][hk]
-and the ever-inspiring [Open Source community][linux]. You'll also find samples
-of my [web][] and [photography][photos] work.
+You'll find me writing here predominantly about my adventures in Hong Kong and
+the ever-inspiring Open Source community. You'll also find samples of my web and
+photography work.
 
 **Thanks** for stopping by!
 
@@ -24,12 +24,7 @@ simple -- awesomely simple -- that's creativity.
 > -- <cite>[Charles Mingus][]</cite>
 
   [mug]: http://www.gravatar.com/avatar/4103b4e9e71e7d5f14b740c9d36c231f?s=140&d=mm&r=PG "My mug shot"
-  [contact]: /contact/ "My contact page"
-  [hk]: /category/life/ "Hong Kong posts"
-  [Linux]: /category/linux/ "Linux articles"
   [Charles Mingus]: http://en.wikipedia.org/wiki/Charles_Mingus "Wikipedia entry on Charles Mingus"
-  [web]: /gallery/web-portfolio/ "My web portfolio"
-  [photos]: /category/gallery/ "My collection of photo galleries"
 
   <!--*[UX]: User Experience-->
   <!--*[UI]: User Interface-->
