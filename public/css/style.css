@@ -168,6 +168,11 @@ nav li {
 
 img { margin: 0.8125em; }
 
+#abstract {
+    list-style: none;
+    margin-left: 0;
+}
+
 /*  HTML5 ✰ Boilerplate - Non semantic {{{1 */
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .hidden { display: none; visibility: hidden; }

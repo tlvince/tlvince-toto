@@ -4,6 +4,9 @@
     <% for entry in archives %>
       <li>
         <a href="<%= entry.path %>"><%= entry.title %></a>
+        <ul id="abstract">
+          <li><%= entry.abstract %></li>
+        </ul>
       </li>
     <% end %>
   <% end %>
