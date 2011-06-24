@@ -13,8 +13,7 @@ require "coderay_bash"
 
 # Rack config {{{1
 use Rack::Static, 
-    :urls => ["/css", "/favicon.ico", "/apple-touch-icon.png", 
-        "/crossdomain.xml", "/humans.txt", "/robots.txt"],
+    :urls => ["/crossdomain.xml", "/humans.txt", "/robots.txt"],
     :root => "public"
 use Rack::CommonLogger
 
