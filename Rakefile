@@ -2,7 +2,7 @@
 # Copyright 2011 Tom Vincent <http://www.tlvince.com/contact/>
 # vim: set fdm=marker :
 
-task :default => :build
+task :default => :deploy
 
 desc "Build pages" # {{{1
 task :build do
@@ -30,6 +30,8 @@ end
 
 desc "Deploy to GitHub and Heroku" # {{{1
 task :deploy do
+    Rake::Task["build"].invoke
+    Rake::Task["pull"].invoke
     toto "Deploying to GitHub"
     `git push origin master`
     toto "Deploying to Heroku"
