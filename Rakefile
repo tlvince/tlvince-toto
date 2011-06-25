@@ -30,8 +30,8 @@ end
 
 desc "Deploy to GitHub and Heroku" # {{{1
 task :deploy do
-    Rake::Task["build"].invoke
     Rake::Task["pull"].invoke
+    Rake::Task["build"].invoke
     toto "Deploying to GitHub"
     `git push origin master`
     toto "Deploying to Heroku"
