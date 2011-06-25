@@ -4,7 +4,7 @@
 
 task :default => :build
 
-desc "Minify assets and build pages" # {{{1
+desc "Build pages" # {{{1
 task :build do
     toto "Building pages"
 
@@ -19,6 +19,13 @@ task :build do
         `pandoc --to="html" --smart --output="#{root}/#{html}" \
             "#{root}/src/#{page}"`
     end
+end
+
+desc "Pull journal entries" # {{{1
+task :pull do
+    toto "Pulling journal entries"
+    `git subtree pull --prefix articles --squash \
+        https://github.com/tlvince/journal.git master`
 end
 
 desc "Deploy to GitHub and Heroku" # {{{1
