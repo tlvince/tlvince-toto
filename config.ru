@@ -80,6 +80,7 @@ toto = Toto::Server.new do
     set :author, "Tom Vincent"
     set :title, "tlvince"
     set :desc, "Essays on hacking, travel and self-improvement"
+    set :disqus, "tlvince"
 
     # Human-readble date format, e.g.: 8th April 2011
     set :date, lambda {|now| now.strftime("#{now.day}<sup>#{now.day.ordinal}</sup> %B, %Y") }
