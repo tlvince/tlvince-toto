@@ -1,8 +1,11 @@
 # Contact
 
-If you'd like to contact me, email is best:
+If you'd like to contact me, [PGP][] encrypted email is best. Here is my public
+key:
 
-**hello@tlvince.com**
+**[tlvince.asc][]**
+
+If you insist on using an insecure method, please use: <hello@tlvince.com>
 
 You my also find me on:
 
@@ -15,3 +18,5 @@ You my also find me on:
   [Twitter]: http://twitter.com/tlvince "tlvince's profile on Twitter"
   [GitHub]: http://github.com/tlvince "tlvince's profile on GitHub"
   [Stack Exchange]: http://stackexchange.com/users/39813f7e-c72a-4c84-9aa2-2735136ef689?tab=accounts "tlvince's profiles on Stack Exchange"
+  [PGP]: https://secure.wikimedia.org/wikipedia/en/wiki/Pretty_Good_Privacy
+  [tlvince.asc]: http://tlvince.appspot.com/tlvince.asc
