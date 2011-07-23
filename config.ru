@@ -86,6 +86,9 @@ toto = Toto::Server.new do
 
     # Human-readble date format, e.g.: 8th April 2011
     set :date, lambda {|now| now.strftime("#{now.day}<sup>#{now.day.ordinal}</sup> %B, %Y") }
+    set :error do |code|
+        File.read("templates/pages/404.html")
+    end
 end
 
 run toto
