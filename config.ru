@@ -74,7 +74,7 @@ use Rack::Rewrite do
     r301 '/work/conquering-the-miserable-programmer-paradox/', '/2011/01/22/conquering-the-miserable-programmer-paradox/'
     r301 '/work/taking-off-and-landing/', '/2010/08/14/taking-off-and-landing/'
     # Additions
-    r301 '/gallery/(.*)', '/'
+    r301 %r{/gallery/(.*)}, '/'
 end
 
 # Create, configure and start a toto instance {{{1
