@@ -3,18 +3,19 @@
 <span id="mugshot">![mug]</span>
 
 **Hi!**  
-I'm *Tom Vincent*, a Computer Science student from the University of Kent, UK.
+I'm *Tom Vincent*, a Computer Science undergraduate from England.
 
-I have a passion for *web development*, *UX*/*UI* design and *AI*, always
-striving for the most simple and elegant solution to the job.[^1]
+I specialise in *artifitial intelligence*, with experience in *investment
+banking*, *web development* and *teaching*, always striving for simplicity and
+elegance.[^1]
 
-I have a extensive background in *music* and love combining it with the
-flexibility of *computing* to form an awesome blend of *music technology*. I'll
-also give you a game of *badminton* any day of the week :).
+Creativity is at the heart of my philosophy. I have an extensive background in
+*music*, *audio production* and *photography*. I'm a *fitness and nutrition*
+enthusiast and a pursuer of *logical reasoning*.
 
-You'll find me writing here predominantly about my adventures in Hong Kong and
-the ever-inspiring Open Source community. You'll also find samples of my web and
-photography work.
+I write predominantly on *travelling* in South East Asia, the ever-inspiring
+*open source* community and lessons on *self-improvement*. You'll also find
+samples of my programming and artist endeavours.
 
 **Thanks** for stopping by!
 
@@ -25,7 +26,3 @@ simple -- awesomely simple -- that's creativity.
 
   [mug]: http://www.gravatar.com/avatar/4103b4e9e71e7d5f14b740c9d36c231f?s=140&d=mm&r=PG "My mug shot"
   [Charles Mingus]: http://en.wikipedia.org/wiki/Charles_Mingus "Wikipedia entry on Charles Mingus"
-
-  <!--*[UX]: User Experience-->
-  <!--*[UI]: User Interface-->
-  <!--*[AI]: Artificial Intelligence-->
