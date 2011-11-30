@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tlvince/toto.git
-  revision: e2c021e0ed8d6db9c11ebec34f2595a177f0ee7f
+  revision: 0c083719aa631c47481b8e47509d75758c298186
   specs:
     toto (0.4.9)
       builder
@@ -11,17 +11,17 @@ GEM
   remote: http://rubygems.org/
   specs:
     builder (3.0.0)
-    coderay (0.9.8)
-    coderay_bash (0.2.1)
-      coderay (< 1.0)
+    coderay (1.0.4)
+    coderay_bash (1.0)
+      coderay (>= 1.0)
     maruku (0.6.0)
       syntax (>= 1.0.0)
     nokogiri (1.5.0)
-    rack (1.3.0)
-    rack-codehighlighter (0.4.7)
+    rack (1.3.5)
+    rack-codehighlighter (0.5.0)
       nokogiri (>= 1.4.1)
       rack (>= 1.0.0)
-    rack-rewrite (1.0.2)
+    rack-rewrite (1.2.1)
     syntax (1.0.0)
 
 PLATFORMS
