@@ -1,7 +1,14 @@
 <article>
   <header>
     <h1><%= title %></h1>
-    <time datetime="<%= self[:date] %>" pubdate><%= date %></time>
+    <time title="Date first published" datetime="<%= self[:date] %>" pubdate><%= date %></time>
+    <% if tags %>
+      <span class="meta"> | Tagged:  
+      <% for tag in tags %>
+        <a href="/tag/<%= tag %>" title="More posts tagged <%= tag %>"><%= tag %></a>
+      <% end %>
+      </span>
+    <% end %>
   </header>
 
   <section class="content">
