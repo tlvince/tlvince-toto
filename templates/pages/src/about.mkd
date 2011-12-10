@@ -15,7 +15,7 @@ enthusiast and a pursuer of *logical reasoning*.
 
 I write predominantly on *travelling* in South East Asia, the ever-inspiring
 *open source* community and lessons on *self-improvement*. You'll also find
-samples of my programming and artistic endeavours.
+samples of my [programming and artistic endeavours][proj].
 
 **Thanks** for stopping by!
 
@@ -26,3 +26,4 @@ simple -- awesomely simple -- that's creativity.
 
   [mug]: http://www.gravatar.com/avatar/4103b4e9e71e7d5f14b740c9d36c231f?s=140&d=mm&r=PG "My mug shot"
   [Charles Mingus]: http://en.wikipedia.org/wiki/Charles_Mingus "Wikipedia entry on Charles Mingus"
+  [proj]: /tag/project
