@@ -12,6 +12,10 @@ require "coderay"
 require "coderay_bash"
 require "rack-rewrite"
 
+if ENV["RACK_ENV"] == "production"
+    require "newrelic_rpm"
+end
+
 # Rack config {{{1
 # Map static files {{{2
 use Rack::Static, 
