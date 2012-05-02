@@ -1,7 +1,7 @@
 # Contact
 
 If you'd like to contact me, PGP encrypted email is best. Here is my public key:
-**[tlvince.asc][]** ([0xE6AEACDE][pgp.mit]).
+**[tlvince.asc][]** (0xE6AEACDE).
 
 If that sounds like gobbledygook, please use: <hello@tlvince.com>  
 
@@ -20,4 +20,3 @@ You my also find me on:
   [tlvince.asc]: http://tlvince.appspot.com/tlvince.asc "tlvince's PGP public key"
   [Flickr]: http://www.flickr.com/photos/tlvince/ "tlvince's profile on Flickr"
   [Fluidr]: http://www.fluidr.com/photos/tlvince "tlvince's profile on Fluidr"
-  [pgp.mit]: http://pgp.mit.edu:11371/pks/lookup?op=vindex&search=0xAB184CDBE6AEACDE "PGP key search for fingerprint '6234 A657 E1D2 EB06 32AF  3E62 AB18 4CDB E6AE ACDE'"
