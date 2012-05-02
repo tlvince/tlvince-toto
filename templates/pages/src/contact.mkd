@@ -12,6 +12,7 @@ You my also find me on:
 * [GitHub][]
 * [Stack Exchange][]
 * [LinkedIn][]
+* [Flattr][]
 
   [LinkedIn]: http://uk.linkedin.com/in/tlvince "tlvince's profile on LinkedIn"
   [Twitter]: http://twitter.com/#!/tlvince "tlvince's profile on Twitter"
@@ -20,3 +21,4 @@ You my also find me on:
   [tlvince.asc]: http://tlvince.appspot.com/tlvince.asc "tlvince's PGP public key"
   [Flickr]: http://www.flickr.com/photos/tlvince/ "tlvince's profile on Flickr"
   [Fluidr]: http://www.fluidr.com/photos/tlvince "tlvince's profile on Fluidr"
+  [Flattr]: https://flattr.com/profile/tlvince "tlvince's profile on Flattr"
