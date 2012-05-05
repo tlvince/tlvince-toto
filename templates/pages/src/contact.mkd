@@ -14,11 +14,11 @@ You my also find me on:
 * [LinkedIn][]
 * [Flattr][]
 
-  [LinkedIn]: http://uk.linkedin.com/in/tlvince "tlvince's profile on LinkedIn"
-  [Twitter]: http://twitter.com/#!/tlvince "tlvince's profile on Twitter"
+  [LinkedIn]: https://www.linkedin.com/in/tlvince "tlvince's profile on LinkedIn"
+  [Twitter]: https://twitter.com/#!/tlvince "tlvince's profile on Twitter"
   [GitHub]: https://github.com/tlvince "tlvince's profile on GitHub"
-  [Stack Exchange]: http://stackexchange.com/users/39813f7e-c72a-4c84-9aa2-2735136ef689?tab=accounts "tlvince's profiles on Stack Exchange"
-  [tlvince.asc]: http://tlvince.appspot.com/tlvince.asc "tlvince's PGP public key"
-  [Flickr]: http://www.flickr.com/photos/tlvince/ "tlvince's profile on Flickr"
+  [Stack Exchange]: https://stackexchange.com/users/179405?tab=accounts "tlvince's profiles on Stack Exchange"
+  [tlvince.asc]: https://tlvince.appspot.com/tlvince.asc "tlvince's PGP public key"
+  [Flickr]: https://secure.flickr.com/photos/tlvince "tlvince's profile on Flickr"
   [Fluidr]: http://www.fluidr.com/photos/tlvince "tlvince's profile on Fluidr"
   [Flattr]: https://flattr.com/profile/tlvince "tlvince's profile on Flattr"
