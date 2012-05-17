@@ -30,7 +30,7 @@ end
 
 # Coderay config {{{2
 use Rack::Codehighlighter, :coderay, :markdown => true, :element => "pre>code",
-    :pattern => /\A:::(\w+)\s*(\n|&#x000A;)/i, :logging => true
+    :pattern => /\A:::(\w+)\s*(\n|&#x000A;)/i, :logging => false
 
 # Rewrites {{{2
 use Rack::Rewrite do
