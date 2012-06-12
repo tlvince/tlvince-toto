@@ -2,7 +2,7 @@
 # Copyright 2011 Tom Vincent <http://www.tlvince.com/contact/>
 # vim: set fdm=marker :
 
-task :default => :deploy
+task :default => :push
 
 desc "Build pages" # {{{1
 task :build do
@@ -21,20 +21,12 @@ task :build do
     end
 end
 
-desc "Pull journal entries" # {{{1
-task :pull do
-    toto "Pulling journal entries"
-    `git subtree pull --prefix articles --squash \
-        https://github.com/tlvince/journal.git master`
-end
-
-desc "Deploy to GitHub and Heroku" # {{{1
-task :deploy do
-    Rake::Task["pull"].invoke
+desc "Push to GitHub and Heroku" # {{{1
+task :push do
     Rake::Task["build"].invoke
-    toto "Deploying to GitHub"
+    toto "Pushing to GitHub"
     `git push origin master`
-    toto "Deploying to Heroku"
+    toto "Pushing to Heroku"
     `git push heroku master`
 end
 
